@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading</title>
+    <link rel="stylesheet" href="css/grading.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="../asset/img/logo_hang_tuah.png" alt="" width="50" height="auto">
+            <div class="school-name">
+                <p>SMK Hang Tuah 1 Jakarta</p>
+                <p class="smk-pk">SMK Pusat Keunggulan</p>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="teacher_dashboard.html">Dashboard</a></li>
+                <li><a href="t_class.html">Class</a></li>
+                <li><a href="t_data.html">Student</a></li>
+                <li><a href="t_grading.html">Grading</a></li>
+                <li><a href="t_announcement.html">Announcement</a></li>
+                <li><a href="t_profile.html">Profile</a></li>
+                <li class="logout-btn"><a class="logout" href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h2>Grading</h2>
+    </header>
+
+   <section class="grading-section">
+  <h2>Grading</h2>
+  <p>From <span class="highlight">Teacher</span></p>
+
+  <div class="grading-container">
+    <div class="event-filter">
+      <label>Event</label>
+      <select>
+        <option selected>PTS</option>
+        <!-- Tambahkan opsi lainnya -->
+      </select>
+    </div>
+
+    <div class="grading-cards">
+      <!-- CARD -->
+      <div class="grading-card">
+        <div class="card-header">
+          <span>XI RPL IPAS</span>
+          <span>Status: <strong>Inputed</strong></span>
+          <button class="add-btn">Add</button>
+        </div>
+        <table class="grading-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Abhymesa Raihan</td>
+              <td class="red">74</td>
+              <td>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Abhymesa Raihan</td>
+              <td class="green">75</td>
+              <td>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Abhymesa Raihan</td>
+              <td class="red">74</td>
+              <td>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="css/student_dashboard_style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="../asset/img/logo_hang_tuah.png" alt="" width="50" height="auto">
+            <div class="school-name">
+                <p>SMK Hang Tuah 1 Jakarta</p>
+                <p class="smk-pk">SMK Pusat Keunggulan</p>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="student_dashboard.html">Dashboard</a></li>
+                <li><a href="result.html">Results</a></li>
+                <li><a href="schedule.html">Schedules</a></li>
+                <li><a href="announcement.html">Announcement</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li class="logout-btn"><a class="logout" href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h2>Student Dashboard</h2>
+    </header>
+
+    <div class="container1">
+
+        <div class="container1-parent">
+
+            <div class="container1-child-1">
+                <div class="profile">
+                    <div class="img-profile">
+                        <img src="../asset/img/foto_profil.jpg" width="100px" height="auto" alt="">
+                    </div>
+                    <div class="desc">
+                        <h3>Muhammad Gading Yuwono Al-Satar</h3>
+                        <p>Software Engineering</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="see-profile">
+                        <a href="profile.html" style="cursor: pointer;">
+                        <button
+                            style="display: inline-block; cursor: pointer; padding: 10px 20px; background-color:  #1793ff; color: #fff; text-decoration: none; border: 0px;">See
+                            Details</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container1-child">
+                
+                <div class="container1-child-2">
+                    <h3>Results</h3>
+                    <p style="font-size: 12px; margin-bottom: 20px;">Last History</p>
+                    <h3 style="font-size: 15px; margin-bottom: 10px;">PTS XI Semester Ganjil</h3>
+                    <table class="results-table">
+                        <tr>
+                            <td style="text-align: left;"><span class="subject yellow">PKWU</span></td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;"><span class="subject green">Agama Islam</span></td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;"><span class="subject red">Bahasa Indonesia</span></td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;"><span class="subject">Sejarah</span></td>
+                            <td>85</td>
+                        </tr>
+                    </table>
+                    <a href="result.html" class="see-more">See more</a>
+                </div>
+
+                <div class="container1-child-2">
+                    <h3>Schedules</h3>
+                    <p style="font-size: 12px; margin-bottom: 20px;">Monday</p>
+                    <table class="schedule-table">
+                        <tr>
+                            <th>Lesson</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>PKWU</td>
+                            <td>07.00 - 09.00</td>
+                        </tr>
+                        <tr>
+                            <td>PJOK</td>
+                            <td>09.00 - 10.00</td>
+                        </tr>
+                        <tr>
+                            <td>KKRPL</td>
+                            <td>10.00 - 14.00</td>
+                        </tr>
+                        <tr>
+                            <td>KBH</td>
+                            <td>14.00 - 15.00</td>
+                        </tr>
+                    </table>
+                    <a href="schedule.html" class="see-more">See more</a>
+                </div>
+            </div>
+
+            <div class="container1-child-3">
+                <div>
+                    <h3>Announcement</h3>
+                    <p style="font-size: 12px; margin-bottom: 10px;">Newest</p>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <div class="announcement green">
+                        <span>Hang Tuah Go Green</span><br>
+                        <small style="font-weight: lighter;">20/04/2025</small>
+                    </div>
+                    <div class="announcement red">
+                        <span>Classmeeting is Around Christmas</span><br>
+                        <small style="font-weight: lighter;">20/04/2025</small>
+                    </div>
+                    <div class="announcement blue">
+                        <span>Hang Tuah X Pocari Sweat</span><br>
+                        <small style="font-weight: lighter;">20/04/2025</small>
+                    </div>
+                </div>
+                <a href="announcement.html" class="see-more">See more</a>
+            </div>
+
+
+        </div>
+</body>
+
+</html>

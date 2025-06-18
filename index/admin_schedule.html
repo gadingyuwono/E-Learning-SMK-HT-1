@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="css/admin_schedule.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="../asset/img/logo_hang_tuah.png" alt="" width="50" height="auto">
+            <div class="school-name">
+                <p>SMK Hang Tuah 1 Jakarta</p>
+                <p class="smk-pk">SMK Pusat Keunggulan</p>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="class.html">Teaching Class</a></li>
+                <li><a href="data.html">Class Data</a></li>
+                <li><a href="subject.html">Subject</a></li>
+                <li><a href="users.php">Users</a></li>
+                <li><a href="grading.html">Grading</a></li>
+                <li><a href="admin_result.html">Results</a></li>
+                <li><a href="admin_schedule.html">Schedules</a></li>
+                <li><a href="admin_announcement.html">Announcement</a></li>
+                <li><a href="admin_profile.html">Profile</a></li>
+                <li class="logout-btn"><a class="logout" href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h2>Schedule</h2>
+    </header>
+
+   <section class="schedule-edit">
+  <h2>Editing Schedule</h2>
+  <p>For <span class="highlight">XI RPL</span></p>
+  <div class="type">
+    <label>Type</label>
+    <span class="type-name">Weekly Schedule</span>
+    <button class="download-btn">Download</button>
+  </div>
+
+  <div class="schedule-table">
+    <!-- Repeat for each day -->
+    <div class="day-section monday">
+      <div class="day-header">
+        <span>Monday</span>
+        <div class="day-actions">
+          <button class="edit-btn">Edit</button>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Lesson</th>
+            <th></th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PKWU</td>
+            <td class="x">✖</td>
+            <td>07.00 - 09.00</td>
+          </tr>
+          <tr>
+            <td>PJOK</td>
+            <td class="x">✖</td>
+            <td>09.00 - 10.00</td>
+          </tr>
+          <tr>
+            <td>KKRPL</td>
+            <td class="x">✖</td>
+            <td>10.00 - 14.00</td>
+          </tr>
+          <tr>
+            <td>KBH</td>
+            <td class="x">✖</td>
+            <td>14.00 - 15.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Ulangi untuk Tuesday, Wednesday, dst -->
+  </div>
+</section>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(56, 136, 255);
+    color: white;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.nav-left .school-name {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.nav-left .school-name .smk-pk {
+    color: red;
+    font-weight: lighter;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-right ul li {
+    list-style-type: none;
+
+}
+
+.nav-right ul .logout-btn {}
+
+.nav-right ul .logout-btn .logout {
+    color: rgb(34, 110, 223);
+    font-weight: bold;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(34, 110, 223);
+    color: white;
+}
+
+.teaching-schedule {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to top right, #2ca9ff, #cbeaff);
+  padding: 70px 20px;
+  color: #333;
+}
+
+.teaching-schedule h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.teaching-schedule p{
+    color: white;
+}
+
+.teaching-schedule .highlight {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.schedule-container {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.teacher-info label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.teacher-info select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.download-btn {
+  padding: 8px 16px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.schedule-card {
+  background-color: #3498db;
+  color: white;
+  border-radius: 10px;
+  width: 180px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.schedule-card:hover {
+  transform: scale(1.03);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.gear {
+  cursor: pointer;
+  font-size: 16px;
+}

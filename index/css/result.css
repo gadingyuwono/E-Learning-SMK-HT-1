@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(56, 136, 255);
+    color: white;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.nav-left .school-name {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.nav-left .school-name .smk-pk {
+    color: red;
+    font-weight: lighter;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-right ul li {
+    list-style-type: none;
+
+}
+
+.nav-right ul .logout-btn {}
+
+.nav-right ul .logout-btn .logout {
+    color: rgb(34, 110, 223);
+    font-weight: bold;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(34, 110, 223);
+    color: white;
+}
+
+.results-timeline {
+    padding: 40px;
+    background: linear-gradient(to top right, rgb(3, 89, 218), #bde4ff);
+    font-family: Arial, sans-serif;
+}
+
+.results-timeline h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.timeline {
+    position: relative;
+    
+    border-left: 4px solid white;
+    padding-left: 20px;
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-date {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.timeline-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+}
+
+.timeline-card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.download-icon {
+    cursor: pointer;
+}
+
+.subject-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.subject-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0;
+}
+
+/* Color labels */
+.subject.yellow { color: orange; }
+.subject.green { color: green; }
+.subject.red { color: red; }
+.subject.orange { color: #ff9800; }
+.subject.purple { color: purple; }
+.subject.blue { color: #3f51b5; }
+.subject.navy { color: #1a237e; }
+
+/* Score arrows */
+.score.up::before {
+    content: "↑ ";
+    color: green;
+}
+.score.down::before {
+    content: "↓ ";
+    color: red;
+}

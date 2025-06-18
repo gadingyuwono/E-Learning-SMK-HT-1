@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(56, 136, 255);
+    color: white;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.nav-left .school-name {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.nav-left .school-name .smk-pk {
+    color: red;
+    font-weight: lighter;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-right ul li {
+    list-style-type: none;
+
+}
+
+.nav-right ul .login-btn {
+    border-radius: 10px;
+}
+
+.nav-right ul .login-btn .login {
+    color: rgb(34, 110, 223);
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(34, 110, 223);
+    color: white;
+}
+
+.container1 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(34, 110, 223)), url(../../asset/img/foto_wisuda.jpg);
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container1-left {
+    flex: 2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.container1-left-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container1-left-parent p {
+    font-size: 20px;
+}
+
+.container1-left-parent2 p {
+    font-size: 12px;
+}
+
+
+.container1-left .container1-left-parent h1 {
+    font-size: 50px;
+}
+
+.container1-left .container1-left-parent h1 span {
+    color: rgb(56, 136, 255);
+}
+
+.container1-right {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1-right-parent {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(56, 136, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 50px rgba(56, 136, 255, 0.4);
+    color: white;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.container1-right-parent h3 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.container1-right-parent h3 span {
+    font-size: 15px;
+    color: white;
+    font-weight: lighter;
+}
+
+.container1-right-parent form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.container1-right-parent form input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1.5px solid rgba(0, 128, 255, 0.5);
+    background: rgba(0, 78, 181, 0.584);
+    color: white;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+
+.container1-right-parent form select {
+    border-radius: 8px;
+    border: 1.5px solid rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+
+.container1-right-parent form input::placeholder {
+    color: #ccc;
+}
+
+.container1-right-parent form input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: rgb(255, 255, 255);
+}
+
+.container1-right-parent form select:focus {
+    outline: none;
+    background-color: rgb(0, 94, 176);
+    color: rgb(255, 255, 255);
+}
+
+.container1-right-parent form input[type="submit"],
+.container1-right-parent form input[type="reset"] {
+    background-color: rgb(56, 136, 255);
+    color: white;
+    font-weight: medium;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+.container1-right-parent form input[type="reset"] {
+    background-color: white;
+    color: rgb(56, 136, 255);
+}
+
+.container1-right-parent form input[type="submit"]:hover {
+    background-color: white;
+    color: rgb(56, 136, 255);
+}
+
+.container1-right-parent form input[type="reset"]:hover {
+    background-color: rgb(56, 136, 255);
+    color: white;
+}
+
+.container1-right-parent .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+.container1-right-parent .info p {
+    font-size: 12px;
+    color: #e4e4e4;
+}
+
+.container1-right-parent .info a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.container1-right-parent .info a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

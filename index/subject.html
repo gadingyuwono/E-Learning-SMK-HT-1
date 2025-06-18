@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject</title>
+    <link rel="stylesheet" href="css/subject.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="../asset/img/logo_hang_tuah.png" alt="" width="50" height="auto">
+            <div class="school-name">
+                <p>SMK Hang Tuah 1 Jakarta</p>
+                <p class="smk-pk">SMK Pusat Keunggulan</p>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="class.html">Teaching Class</a></li>
+                <li><a href="data.html">Class Data</a></li>
+                <li><a href="subject.html">Subject</a></li>
+                <li><a href="users.php">Users</a></li>
+                <li><a href="grading.html">Grading</a></li>
+                <li><a href="admin_result.html">Results</a></li>
+                <li><a href="admin_schedule.html">Schedules</a></li>
+                <li><a href="admin_announcement.html">Announcement</a></li>
+                <li><a href="admin_profile.html">Profile</a></li>
+                <li class="logout-btn"><a class="logout" href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h2>Subject</h2>
+    </header>
+
+    <section class="subject-edit-section">
+        <h2>Editing Subjects</h2>
+        <p>From <span class="highlight">Admin</span></p>
+
+        <div class="filters">
+            <label>Class</label>
+            <select>
+                <option>XII</option>
+                <!-- Add more options -->
+            </select>
+
+            <label>Major</label>
+            <select>
+                <option>AKL</option>
+                <!-- Add more majors -->
+            </select>
+
+            <div class="actions">
+                <button class="add-btn">+</button>
+                <button class="delete-btn">🗑️</button>
+            </div>
+        </div>
+
+        <div class="subject-cards">
+            <!-- Repeat this block for each subject -->
+            <div class="subject-card">
+                <div class="top-info">
+                    <span><strong>Major</strong> AKL</span>
+                    <span><strong>Type</strong> Majoring</span>
+                    <span><strong>Class</strong> XII</span>
+                </div>
+                <div class="subject-title">
+                    Fluktuasi dan Inflasi
+                    <div class="code">FI</div>
+                </div>
+                <div class="bottom-info">
+                    <span>20-02-2025</span>
+                    <span class="edit-icon">✏️</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(56, 136, 255);
+    color: white;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.nav-left .school-name {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.nav-left .school-name .smk-pk {
+    color: red;
+    font-weight: lighter;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-right ul li {
+    list-style-type: none;
+
+}
+
+.nav-right ul .logout-btn {}
+
+.nav-right ul .logout-btn .logout {
+    color: rgb(34, 110, 223);
+    font-weight: bold;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(34, 110, 223);
+    color: white;
+}
+
+.subject-edit-section {
+  font-family: Arial, sans-serif;
+  padding: 150px 30px;
+  background: linear-gradient(to bottom right, #2ca9ff, #e0f4ff);
+  color: #333;
+}
+
+.subject-edit-section h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.subject-edit-section p {
+  color: white;
+}
+
+.subject-edit-section .highlight {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.filters select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.actions {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.add-btn,
+.delete-btn {
+  padding: 6px 10px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.subject-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.subject-card {
+  background-color: #3498db;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.subject-card .top-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.subject-title {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.subject-title .code {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.bottom-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.edit-icon {
+  cursor: pointer;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/admin_dashboard_style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="../asset/img/logo_hang_tuah.png" alt="" width="50" height="auto">
+            <div class="school-name">
+                <p>SMK Hang Tuah 1 Jakarta</p>
+                <p class="smk-pk">SMK Pusat Keunggulan</p>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="class.html">Teaching Class</a></li>
+                <li><a href="data.html">Class Data</a></li>
+                <li><a href="subject.html">Subject</a></li>
+                <li><a href="users.php">Users</a></li>
+                <li><a href="grading.html">Grading</a></li>
+                <li><a href="admin_result.html">Results</a></li>
+                <li><a href="admin_schedule.html">Schedules</a></li>
+                <li><a href="admin_announcement.html">Announcement</a></li>
+                <li><a href="admin_profile.html">Profile</a></li>
+                <li class="logout-btn"><a class="logout" href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h2>Admin Dashboard</h2>
+    </header>
+
+    <section class="dashboard">
+
+        <!-- Profile Section -->
+        <div class="card profile">
+            <div class="profile-left">
+                <img src="../asset/img/foto_profil.jpg" alt="Admin Photo" class="avatar">
+                <div>
+                    <p class="welcome">Hi, <span class="name">Ilham Amilfat</span>. You're logged in as <span
+                            class="role">Admin</span>.</p>
+                    <p class="school">Admin of SMKHT1</p>
+                </div>
+            </div>
+            <button class="btn">See Details</button>
+        </div>
+
+        <!-- Class & Students -->
+        <div class="grid two-column">
+            <div class="card class-section">
+                <h3>Class Schedule - Monday</h3>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <p class="class-name">XI RPL</p>
+                        <p class="time">06:00 - 15:00</p>
+                    </div>
+                </div>
+                <div class="teacher-info">
+                    <p class="teacher-name">Farah Hidayatul Afifah</p>
+                    <p class="timestamp">20-06-2025 12:00</p>
+                    <button class="btn small">Continue</button>
+                </div>
+            </div>
+
+            <div class="card student-section">
+                <h3>Students - XI RPL</h3>
+                <ul class="student-list">
+                    <li>1. Abhymesa Raihan</li>
+                    <li>2. Ahmad Arif</li>
+                    <li>3. Fito Riansyah</li>
+                    <li>4. Akmal</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Grading -->
+        <div class="card grading-section">
+            <h3>PTS Ganjil 2024/2025</h3>
+            <div class="grading-grid">
+                <div class="grade-card">
+                    <p class="grade-class">XI RPL KK-RPL</p>
+                    <p class="grade-percent">75%</p>
+                    <div class="grade-entry">
+                        <p class="student-name">Muhammad Gading</p>
+                        <p class="grade-score red">90</p>
+                    </div>
+                    <div class="grade-entry">
+                        <p class="student-name">Muhammad Rayhan</p>
+                        <p class="grade-score green">95</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results and Schedule -->
+        <div class="grid two-column">
+            <div class="card result-section">
+                <h3>Results - PTS XI Semester Ganjil</h3>
+                <div class="result-entry">
+                    <p class="subject">PKWU</p>
+                    <p class="score">80</p>
+                </div>
+                <div class="result-entry">
+                    <p class="subject">Agama Islam</p>
+                    <p class="score">90</p>
+                </div>
+                <div class="result-entry">
+                    <p class="subject">Bahasa Indonesia</p>
+                    <p class="score">90</p>
+                </div>
+                <div class="result-entry">
+                    <p class="subject">Sejarah</p>
+                    <p class="score">85</p>
+                </div>
+            </div>
+
+            <div class="card schedule-section">
+                <h3>Schedule - XI RPL (Monday)</h3>
+                <div class="schedule-row">
+                    <p class="subject">PKWU</p>
+                    <p class="time">07:00 – 08:00</p>
+                </div>
+                <div class="schedule-row">
+                    <p class="subject">PJOK</p>
+                    <p class="time">09:00 – 10:00</p>
+                </div>
+                <div class="schedule-row">
+                    <p class="subject">KKRPL</p>
+                    <p class="time">10:00 – 14:00</p>
+                </div>
+                <div class="schedule-row">
+                    <p class="subject">KBH</p>
+                    <p class="time">14:00 – 15:00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Announcement Section -->
+        <div class="card announcement-section">
+            <h3>Announcements</h3>
+            <div class="announcement">
+                <div class="badge green">
+                    <p class="title">Hang Tuah Go Green</p>
+                    <p class="date">24/06/2025</p>
+                </div>
+                <div class="badge red">
+                    <p class="title">Classmeeting is Around Christmas</p>
+                    <p class="date">24/06/2025</p>
+                </div>
+                <div class="badge blue">
+                    <p class="title">Hang Tuah x Pocari Sweat</p>
+                    <p class="date">24/06/2025</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Teacher and Users -->
+        <div class="grid two-column">
+            <!-- Teacher -->
+            <div class="card teacher-section">
+                <h3>Latest Teacher</h3>
+                <div class="data-row">
+                    <p class="name">Abhymesa Raihan Adi</p>
+                    <p class="subject">MTK</p>
+                </div>
+                <button class="btn small">Add</button>
+            </div>
+
+            <!-- Users -->
+            <div class="card user-section">
+                <h3>Latest User</h3>
+                <div class="data-row">
+                    <p class="name">Abhymesa Raihan Adi</p>
+                    <p class="role">Teacher</p>
+                    <p class="username">abhy</p>
+                    <p class="date">20-6-2025 15:00</p>
+                </div>
+                <button class="btn small">Add</button>
+            </div>
+        </div>
+
+        <!-- Subjects -->
+        <div class="card subject-section">
+            <h3>Subjects</h3>
+            <div class="subject-data">
+                <p><strong>Major:</strong> AKL</p>
+                <p><strong>Type:</strong> Majoring</p>
+                <p><strong>Class:</strong> XII</p>
+                <p><strong>Title:</strong> Fluktuasi dan Inflasi</p>
+                <p><strong>Initial:</strong> FI</p>
+                <p><strong>Date:</strong> 20-02-2025</p>
+            </div>
+            <div class="add-more">
+                <p>Add More?</p>
+                <button class="btn small">Add</button>
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

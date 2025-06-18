@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(56, 136, 255);
+    color: white;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.nav-left .school-name {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.nav-left .school-name .smk-pk {
+    color: red;
+    font-weight: lighter;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-right ul li {
+    list-style-type: none;
+
+}
+
+.nav-right ul .logout-btn {}
+
+.nav-right ul .logout-btn .logout {
+    color: rgb(34, 110, 223);
+    font-weight: bold;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(34, 110, 223);
+    color: white;
+}
+
+.rpl-schedule-page {
+    background: linear-gradient(to top right, rgb(3, 89, 218), #bde4ff);
+    padding: 60px 20px;
+    padding-top: 40px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.rpl-schedule-page h2 {
+    margin-left: 290px;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.student-name{
+    margin-left: 290px;
+}
+
+.rpl-schedule-page .student-name span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.schedule-container {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    color: black;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.schedule-type {
+    font-size: 14px;
+    color: #777;
+}
+
+.schedule-type a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.download-btn {
+    padding: 8px 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.schedule-table-wrapper {
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.schedule-table th {
+    color: white;
+}
+
+.monday { background-color: #e53935; }
+.tuesday { background-color: #fb8c00; }
+.wednesday { background-color: #fbc02d; }
+.thursday { background-color: #43a047; }
+.friday { background-color: #00897b; }
+
+.sub-header th {
+    background-color: #1976d2;
+    color: white;
+}

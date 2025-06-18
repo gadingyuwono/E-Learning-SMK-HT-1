@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login_style.css">
+</head>
+<script>
+   function goToLoading() {
+        const role = document.getElementById('role').value;
+
+        sessionStorage.setItem("role", role);
+
+        window.location.href = "loading.html";
+        return false;
+    }
+</script>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="../asset/img/logo_hang_tuah.png" alt="" width="50" height="auto">
+            <div class="school-name">
+                <p>SMK Hang Tuah 1 Jakarta</p>
+                <p class="smk-pk">SMK Pusat Keunggulan</p>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="school_profile.html">School Profile</a></li>
+                <li><a href="news.html">News</a></li>
+                <li class="login-btn"><a class="login" href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h2>Login</h2>
+    </header>
+
+    <div class="container1">
+
+        <div class="container1-left">
+
+            <div class="container1-left-parent">
+                <h1>BE <br> PART <br> <span>OF US</span></h1>
+                <p>Together we <strong>stronger</strong>, <strong>smarter</strong></p>
+            </div>
+
+            <div class="container1-left-parent2">
+                <p>Designed By SMKHT1 <strong>ViComDes Team</strong></p>
+            </div>
+
+        </div>
+
+        <div class="container1-right">
+
+            <div class="container1-right-parent">
+
+                <h3>Login <br> <span>E-Learning</span></h3>
+
+                <form action="" method="" onsubmit="return goToLoading();">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required placeholder="Please fill your Username">
+                    <br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Please fill your Password">
+                    <br>
+
+                    <div>
+                        <label for="role">Choose your Role:</label>
+                        <select id="role" name="role">
+                            <option value="admin">Admin</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="student">Student</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <div>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+                
+                <div class="info">
+                    <p>This feature is under <br> SMKHT1 IT Team</p>
+                    <a href="">Get Help</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

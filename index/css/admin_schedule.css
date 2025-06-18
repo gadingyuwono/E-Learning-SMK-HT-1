@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(56, 136, 255);
+    color: white;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.nav-left .school-name {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.nav-left .school-name .smk-pk {
+    color: red;
+    font-weight: lighter;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-right ul li {
+    list-style-type: none;
+
+}
+
+.nav-right ul .logout-btn {}
+
+.nav-right ul .logout-btn .logout {
+    color: rgb(34, 110, 223);
+    font-weight: bold;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(34, 110, 223);
+    color: white;
+}
+
+.schedule-edit {
+  padding: 120px 30px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #2ca9ff, #e0f4ff);
+  color: #333;
+}
+
+.schedule-edit h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.highlight {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.type-name {
+  font-weight: bold;
+  color: #2990ff;
+  margin-left: 10px;
+}
+
+.download-btn {
+  padding: 6px 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.schedule-table {
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+}
+
+.day-section {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.monday .day-header {
+  background-color: #e74c3c;
+}
+
+.tuesday .day-header {
+  background-color: #e67e22;
+}
+
+.wednesday .day-header {
+  background-color: #f1c40f;
+}
+
+.thursday .day-header {
+  background-color: #2980b9;
+}
+
+.friday .day-header {
+  background-color: #16a085;
+}
+
+.day-actions button {
+  margin-left: 10px;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #f1c40f;
+  color: black;
+}
+
+.add-btn {
+  background-color: #2980b9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.x {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}

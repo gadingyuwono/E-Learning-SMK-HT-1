@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index/css/index_style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="asset/img/logo_hang_tuah.png" alt="" width="50" height="auto">
+            <div class="school-name">
+                <p>SMK Hang Tuah 1 Jakarta</p>
+                <p class="smk-pk">SMK Pusat Keunggulan</p>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="index/index.html">Home</a></li>
+                <li><a href="index/school_profile.html">School Profile</a></li>
+                <li><a href="index/news.html">News</a></li>
+                <li class="login-btn"><a class="login" href="index/login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h2>Home</h2>
+    </header>
+
+    <div class="container1">
+
+        <div class="container1-left">
+            <h1 class="head">The day <br> its not <br> over.</h1>
+            <p class="child">Bahrudin</p>
+        </div>
+
+        <div class="container1-right">
+
+            <div class="head">
+                <img src="asset/img/kemendikbud.png" alt="">
+                <img src="asset/img/logo_hang_tuah.png" alt="">
+            </div>
+
+            <p>SMK Hang Tuah 1 Jakarta <span>Official Website</span></p>
+        </div>
+
+    </div>
+    <div class="intro-school">
+        <div class="intro-left">
+            <h3>We are,</h3>
+            <h1>SMK Hang Tuah 1<br>Jakarta</h1>
+            <p>SMK Hang Tuah 1 Jakarta is a private vocational high school established under the auspices of The Hang
+                Tuah Foundation.</p>
+        </div>
+        <div class="intro-right">
+            <img src="asset/img/upacara.jpg" alt="SMK Building">
+        </div>
+    </div>
+
+    <div class="container-major">
+        <div class="major-title">
+            <h2>Major</h2>
+            <p>We have 5 competent majors.</p>
+        </div>
+        <div class="major-grid">
+            <div class="major-card">
+                <img src="asset/img/dkv.jpg" alt="DKV">
+                <h3>DKV</h3>
+                <p>Visual Communication Design</p>
+                <a href="#">See more</a>
+            </div>
+            <div class="major-card">
+                <img src="asset/img/rpl.jpg" alt="RPL">
+                <h3>RPL</h3>
+                <p>Software Engineering</p>
+                <a href="#">See more</a>
+            </div>
+            <div class="major-card">
+                <img src="asset/img/mp.jpg" alt="MP">
+                <h3>MP</h3>
+                <p>Office Management</p>
+                <a href="#">See more</a>
+            </div>
+            <div class="major-card">
+                <img src="asset/img/akl.jpg" alt="AKL">
+                <h3>AKL</h3>
+                <p>Accounting & Finance</p>
+                <a href="#">See more</a>
+            </div>
+            <div class="major-card">
+                <img src="asset/img/br.jpg" alt="BR">
+                <h3>BR</h3>
+                <p>Business & Retail</p>
+                <a href="#">See more</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    document.body.classList.add('fade-in');
+
+    document.querySelectorAll('a[href]').forEach(link => {
+        const isSameSite = link.hostname === window.location.hostname;
+        if (isSameSite && !link.href.includes('#')) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.body.classList.remove('fade-in');
+                document.body.classList.add('fade-out');
+
+                setTimeout(() => {
+                    window.location.href = this.href;
+                }, 300);
+            });
+        }
+    });
+</script>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <img src="asset/img/logo_hang_tuah.png" alt="Logo" width="50">
+            <div class="footer-info">
+                <h4>SMK Hang Tuah 1 Jakarta</h4>
+                <p>SMK Pusat Keunggulan | Est. 1989</p>
+            </div>
+        </div>
+
+        <div class="footer-middle">
+            <h5>Quick Links</h5>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index/school_profile.html">School Profile</a></li>
+                <li><a href="index/news.html">News</a></li>
+                <li><a href="index/login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <h5>Contact</h5>
+            <p>📍 Komplek TNI AL Kodamar Sunter, Jl. Tabah Raya No.1 1, RT.1/RW.9, Klp. Gading Bar.,<br> Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14240</p>
+            <p>📞 (021) 4535140</p>
+            <p>📧 smkhtone@yahoo.co.id</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 SMK Hang Tuah 1 Jakarta. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>

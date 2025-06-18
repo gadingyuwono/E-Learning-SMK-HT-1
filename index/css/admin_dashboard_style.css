@@ -1,0 +1,351 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ body {}
+
+ nav {
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+     background-color: rgb(56, 136, 255);
+     color: white;
+ }
+
+ .nav-left {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     font-weight: bold;
+ }
+
+ .nav-left .school-name {
+     display: flex;
+     flex-direction: column;
+     gap: 2px;
+ }
+
+ .nav-left .school-name .smk-pk {
+     color: red;
+     font-weight: lighter;
+ }
+
+ .nav-right {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .nav-right ul {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+ }
+
+ .nav-right ul li {
+     list-style-type: none;
+
+ }
+
+ .nav-right ul .logout-btn {}
+
+ .nav-right ul .logout-btn .logout {
+     color: rgb(34, 110, 223);
+     font-weight: bold;
+     padding: 10px;
+     background-color: white;
+     border-radius: 10px;
+ }
+
+ .nav-right ul li a {
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+ }
+
+ header {
+     padding: 20px;
+     background-color: rgb(34, 110, 223);
+     color: white;
+ }
+
+ body {
+     margin: 0;
+     font-family: 'Segoe UI', sans-serif;
+     background-color:  rgb(39, 89, 163);
+     color: #333;
+ }
+
+ .dashboard {
+     max-width: 1200px;
+     margin: 30px auto;
+     padding: 0 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 24px;
+ }
+
+ .card {
+     background: #fff;
+     padding: 24px;
+     border-radius: 16px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+ }
+
+ .grid.two-column {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 24px;
+ }
+
+ .profile {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .profile-left {
+     display: flex;
+     align-items: center;
+     gap: 16px;
+ }
+
+ .avatar {
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     object-fit: cover;
+ }
+
+ .welcome {
+     font-size: 15px;
+ }
+
+ .name {
+     color: #378eff;
+     font-weight: bold;
+ }
+
+ .role {
+     color: #2a68d8;
+     font-weight: bold;
+ }
+
+ .btn {
+     background-color: #378eff;
+     color: white;
+     padding: 10px 16px;
+     border: none;
+     border-radius: 8px;
+     font-size: 14px;
+     cursor: pointer;
+ }
+
+ .btn.small {
+     padding: 6px 12px;
+     font-size: 13px;
+ }
+
+ .schedule-list,
+ .result-entry,
+ .schedule-row,
+ .grade-entry {
+     display: flex;
+     justify-content: space-between;
+     padding: 8px 0;
+     border-bottom: 1px solid #e0e0e0;
+ }
+
+ .teacher-info {
+     margin-top: 14px;
+ }
+
+ .teacher-name {
+     font-weight: 600;
+ }
+
+ .timestamp {
+     font-size: 12px;
+     color: #888;
+     margin-bottom: 6px;
+ }
+
+ .student-list {
+     list-style: none;
+     padding: 0;
+ }
+
+ .student-list li {
+     padding: 6px 0;
+     border-bottom: 1px solid #eee;
+ }
+
+ .grading-grid {
+     display: flex;
+     gap: 20px;
+     flex-wrap: wrap;
+     margin-top: 12px;
+ }
+
+ .grade-card {
+     background-color: #eef4ff;
+     padding: 16px;
+     border-radius: 12px;
+     flex: 1;
+     min-width: 250px;
+ }
+
+ .grade-class {
+     font-weight: 600;
+ }
+
+ .grade-percent {
+     font-weight: bold;
+     color: #2e86de;
+     margin: 6px 0 12px;
+ }
+
+ .student-name {
+     font-size: 14px;
+ }
+
+ .grade-score {
+     font-weight: bold;
+     padding: 4px 10px;
+     border-radius: 6px;
+     color: white;
+     min-width: 30px;
+     text-align: center;
+ }
+
+ .grade-score.red {
+     background-color: #e74c3c;
+ }
+
+ .grade-score.green {
+     background-color: #27ae60;
+ }
+
+ .result-entry .subject,
+ .schedule-row .subject {
+     font-weight: 500;
+ }
+
+ .result-entry .score,
+ .schedule-row .time {
+     font-weight: 600;
+ }
+
+ /* Card Styling */
+ .card {
+     background: #ffffff;
+     border-radius: 20px;
+     padding: 24px;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+     transition: box-shadow 0.3s ease;
+ }
+
+ .card:hover {
+     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+ }
+
+ /* Buttons */
+ .btn {
+     background: linear-gradient(135deg, #3a8fff, #2d6cdf);
+     color: white;
+     border: none;
+     padding: 10px 18px;
+     border-radius: 10px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: background 0.3s ease;
+ }
+
+ .btn:hover {
+     background: linear-gradient(135deg, #2d6cdf, #3a8fff);
+     transform: scale(1.03);
+ }
+
+ /* Small Button */
+ .btn.small {
+     padding: 6px 12px;
+     font-size: 13px;
+ }
+
+ /* Announcements */
+ .announcement-section .badge {
+     padding: 14px 20px;
+     border-radius: 12px;
+     margin-bottom: 14px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     transition: transform 0.2s ease;
+ }
+
+ .announcement-section .badge:hover {
+     transform: translateY(-2px);
+ }
+
+ .announcement-section .title {
+     font-weight: 600;
+     font-size: 16px;
+ }
+
+ .announcement-section .date {
+     font-size: 13px;
+     opacity: 0.8;
+ }
+
+ /* Soft Colors */
+ .badge.green {
+     background-color: #d1f7dc;
+     color: #148546;
+ }
+
+ .badge.red {
+     background-color: #fde0e0;
+     color: #b62525;
+ }
+
+ .badge.blue {
+     background-color: #e1f0ff;
+     color: #2363c2;
+ }
+
+ /* Data Row */
+ .data-row p {
+     background-color: #f4f7fa;
+     padding: 6px 12px;
+     border-radius: 8px;
+ }
+
+ /* Subjects */
+ .subject-section .subject-data p {
+     background-color: #ecf0f3;
+     padding: 10px;
+     margin: 10px;
+     border-radius: 10px;
+     font-weight: 500;
+     text-align: center;
+     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+ }
+
+ /* Heading Section */
+ .card h3 {
+     font-size: 18px;
+     font-weight: 600;
+     margin-bottom: 16px;
+     color: #2a2f45;
+ }

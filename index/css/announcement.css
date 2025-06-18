@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(56, 136, 255);
+    color: white;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.nav-left .school-name {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.nav-left .school-name .smk-pk {
+    color: red;
+    font-weight: lighter;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-right ul li {
+    list-style-type: none;
+
+}
+
+.nav-right ul .logout-btn {}
+
+.nav-right ul .logout-btn .logout {
+    color: rgb(34, 110, 223);
+    font-weight: bold;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(34, 110, 223);
+    color: white;
+}
+
+.announcement-page {
+    background: linear-gradient(to top right, rgb(3, 89, 218), #bde4ff);
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.announcement-page h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+    margin-left: 290px;
+}
+
+.student-name {
+    margin-left: 290px;
+}
+
+
+.announcement-page .student-name span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.announcement-container {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    color: black;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.filter-bar {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.filter-bar select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.announcement-card {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.announcement-card h4 {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.announcement-card .dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.announcement-card small {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.announcement-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Color Themes */
+.green {
+    background-color: #00c853;
+}
+
+.red {
+    background-color: #e53935;
+}
+
+.yellow {
+    background-color: #ffeb3b;
+    color: black;
+}
+
+.purple {
+    background-color: #673ab7;
+}
+
+.blue {
+    background-color: #039be5;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 6px 12px;
+    background-color: #e0e0e0;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.pagination a.active {
+    background-color: #1976d2;
+    color: white;
+}
